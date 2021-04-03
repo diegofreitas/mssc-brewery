@@ -8,4 +8,6 @@ public interface BeerService {
     default BeerDTO getByID(UUID beerId) {
         return BeerDTO.builder().id(beerId).beerName("Name").build();
     }
+
+    BeerDTO saveBeer(BeerDTO dto);
 }
